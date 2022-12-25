@@ -12,12 +12,13 @@ body, th, td, input, select, textarea, button {font-family: 'Poppins','Pretendar
 body, th, td, input, select, textarea, button, h1, h2, h3, h4, h5, h6, a, p {color:#111; font-weight:300; font-size:17px; line-height:1.5;}
 button {cursor:pointer;}
 
-
-#header {width:1240px; margin:0 auto; line-height:1.7; position:relative;}
+body {overflow-x:hidden;}
+.main_title {width:1240px; margin:0 auto; position:relative;}
+.main_bg {width:1920px; margin-left:-340px;}
 h1 {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:#fff; font-size:60px;}
 h2 {font-size:50px; font-weight:600; margin-bottom:70px;}
+h2 span {font-size:30px; font-weight:200; color:#acacac;}
 hr {width:100%; min-width:1240px; margin:0 auto; border:1px solid #dcdcdc; border-bottom:0;}
-.main_bg {width:1920px; margin-left:-340px;}
 
 section {width:1240px; margin:0 auto; padding:120px 0 140px;}
 
@@ -44,3 +45,7 @@ section {width:1240px; margin:0 auto; padding:120px 0 140px;}
 
 .gallery-item {width:380px; background:#000;}
 .gallery-item img {width:100%; opacity:0.97;}
+
+
+footer {padding:50px 0; text-align:center;}
+footer .title {font-size:20px; margin-bottom:20px; font-weight:bold;}
