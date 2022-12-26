@@ -13,14 +13,14 @@ body, th, td, input, select, textarea, button, h1, h2, h3, h4, h5, h6, a, p {col
 button {cursor:pointer;}
 
 body {overflow-x:hidden;}
-.main_title {width:1240px; margin:0 auto; position:relative;}
-.main_bg {width:1920px; margin-left:-340px;}
-h1 {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:#fff; font-size:60px;}
+h1 {color:#fff; font-size:60px;}
 h2 {font-size:50px; font-weight:600; margin-bottom:70px;}
 h2 span {font-size:30px; font-weight:200; color:#acacac;}
 hr {width:100%; min-width:1240px; margin:0 auto; border:1px solid #dcdcdc; border-bottom:0;}
 
 section {width:1240px; margin:0 auto; padding:120px 0 140px;}
+
+.main_title {width:100%; max-width:1920px; height:600px; display:flex; justify-content:center; align-items:center; background:url('../images/main_bg.jpg') no-repeat center;}
 
 #about dl {display:inline-block; vertical-align:top; margin-right:180px;}
 #about dl:last-child {margin-right:0;}
@@ -49,3 +49,31 @@ section {width:1240px; margin:0 auto; padding:120px 0 140px;}
 
 footer {padding:50px 0; text-align:center;}
 footer .title {font-size:20px; margin-bottom:20px; font-weight:bold;}
+
+
+@media (max-width: 768px) {
+
+h1 {font-size:2.5rem;}
+h2 {font-size:2rem; margin-bottom:10vw;}
+h2 span {font-size:1.2rem; }
+.main_title {background:url('../images/main_bg.jpg') no-repeat 60% 50%;}
+
+section {width:85%; padding:15vw 0;}
+#load {width:95%;}
+hr {min-width:auto;}
+#about dl {display:block; margin-right:0; margin-bottom:10vw;}
+#about dl dt {font-size:1.5rem; margin-bottom:3vw;}
+#about dl dt span {font-size:1rem;}
+#about dl dd {font-size:1rem; margin-bottom:0;}
+
+#publishing article > div {float:none;}
+#publishing article .img {margin-right:0; margin-bottom:5vw;}
+#publishing article .img img {width:100%;}
+#publishing article .name {font-size:1.3rem; margin-bottom:5vw;}
+#publishing article .skill {font-size:1.1rem;}
+#publishing article ul li {font-size:0.9rem;}
+#publishing article button {display:block; width:100%; padding:2vw 10vw;}
+
+#publishing article .info {width:90%; margin:0 auto;}
+
+}
